@@ -1,0 +1,141 @@
+/* ============================================
+   BOOM DIVINA – ESTÉTICA
+   CSS Custom Properties (Variables)
+   Identidad Femenina, Delicada y Profesional
+   ============================================ */
+
+:root {
+  /* ── Paleta de Colores Oficial BOOM DIVINA ── */
+  --color-pink-primary:     #E8A1B5; /* Rosa principal */
+  --color-pink-intense:     #D97899; /* Rosa intenso para botones y detalles */
+  --color-pink-pastel:      #F8DDE6; /* Rosa pastel */
+  --color-pink-light:       #FFF1F5; /* Rosa muy claro */
+  --color-warm-white:       #FFFCFD; /* Blanco cálido */
+  --color-cream:            #FFF7F0; /* Crema */
+  --color-lavender-pastel:  #EDE4F5; /* Lavanda pastel */
+  --color-beige-soft:       #F1E7DF; /* Beige suave */
+  --color-gray-warm:        #81777C; /* Gris cálido para textos secundarios */
+  --color-dark-gray:        #40373C; /* Gris oscuro para textos principales */
+
+  /* Aliases para compatibilidad y consistencia */
+  --color-rose-gold:        #E8A1B5;
+  --color-dusty-rose:       #D97899;
+  --color-dark-brown:       #40373C;
+  --color-gold-soft:        #D97899;
+  --color-pink-soft:        #F8DDE6;
+  --color-accent:           #D97899;
+
+  /* Neutros adicionales */
+  --color-white:            #FFFFFF;
+  --color-black:            #1A1417;
+  --color-border-subtle:    rgba(232, 161, 181, 0.22);
+  --color-border-pink:      #F8DDE6;
+  --color-border-focus:     #D97899;
+
+  /* Estados Funcionales */
+  --color-success:          #48A26A;
+  --color-success-light:    #EBF6EE;
+  --color-warning:          #D98838;
+  --color-warning-light:    #FDF5EC;
+  --color-error:            #D64562;
+  --color-error-light:      #FDECEF;
+  --color-info:             #7B68EE;
+  --color-info-light:       #F1EEFD;
+
+  /* ── Tipografías ── */
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body:    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono:    'Consolas', monospace;
+
+  /* Tamaños de fuente */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  1.875rem;   /* 30px */
+  --text-4xl:  2.25rem;    /* 36px */
+  --text-5xl:  3rem;       /* 48px */
+  --text-6xl:  3.75rem;    /* 60px */
+
+  /* Pesos tipográficos */
+  --font-light:    300;
+  --font-regular:  400;
+  --font-medium:   500;
+  --font-semibold: 600;
+  --font-bold:     700;
+
+  /* Altura de línea */
+  --leading-tight:  1.25;
+  --leading-snug:   1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.65;
+
+  /* Tracking */
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.025em;
+  --tracking-wider:  0.05em;
+  --tracking-widest: 0.12em;
+
+  /* ── Espaciados ── */
+  --space-1:  0.25rem;   /* 4px */
+  --space-2:  0.5rem;    /* 8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+
+  /* ── Layout ── */
+  --container-sm:  640px;
+  --container-md:  768px;
+  --container-lg:  1024px;
+  --container-xl:  1200px;
+  --container-padding: 1.5rem;
+
+  /* ── Bordes Redondeados ── */
+  --radius-xs:   0.25rem;
+  --radius-sm:   0.375rem;
+  --radius-md:   0.625rem;  /* 10px */
+  --radius-lg:   0.875rem;  /* 14px */
+  --radius-xl:   1.125rem;  /* 18px */
+  --radius-2xl:  1.5rem;    /* 24px */
+  --radius-full: 9999px;
+
+  /* ── Sombras Delicadas ── */
+  --shadow-xs:   0 2px 4px rgba(129, 119, 124, 0.05);
+  --shadow-sm:   0 4px 10px rgba(129, 119, 124, 0.07);
+  --shadow-md:   0 8px 24px rgba(232, 161, 181, 0.12);
+  --shadow-lg:   0 14px 34px rgba(232, 161, 181, 0.16);
+  --shadow-xl:   0 20px 48px rgba(217, 120, 153, 0.18);
+  --shadow-pink: 0 10px 25px rgba(217, 120, 153, 0.28);
+  --shadow-card: 0 8px 26px rgba(217, 120, 153, 0.09);
+
+  /* ── Degradados Suaves ── */
+  --gradient-pink:       linear-gradient(135deg, #E8A1B5 0%, #D97899 100%);
+  --gradient-pink-hover: linear-gradient(135deg, #D97899 0%, #C86687 100%);
+  --gradient-soft:       linear-gradient(180deg, #FFF1F5 0%, #FFFCFD 100%);
+  --gradient-hero:       linear-gradient(135deg, rgba(255,241,245,0.92) 0%, rgba(248,221,230,0.85) 50%, rgba(255,252,253,0.95) 100%);
+  --gradient-card:       linear-gradient(145deg, #FFFFFF 0%, #FFF7F0 100%);
+  --gradient-badge:      linear-gradient(135deg, #FFF1F5 0%, #F8DDE6 100%);
+
+  /* ── Transiciones ── */
+  --transition-fast:   150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base:   250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow:   380ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Z-index ── */
+  --z-sticky:   200;
+  --z-modal:    400;
+  --z-toast:    500;
+
+  /* ── Dimensiones del Layout ── */
+  --navbar-height: 80px;
+  --sidebar-width: 270px;
+}

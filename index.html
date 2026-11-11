@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOM DIVINA – Centro de Estética Femenina</title>
+  <meta name="description" content="Centro de estética femenina integral. Servicios de pestañas, cejas, manicuría, pedicuría, tratamientos faciales y estética a domicilio. Reservá tu turno online.">
+  
+  <!-- Google Fonts: Playfair Display + Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Feather Icons CDN -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Bar de Anuncio / Contacto -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-item">
+        <i data-feather="map-pin" class="icon-small"></i>
+        <span>Av. Santa Fe 2450, Piso 3, Recoleta, CABA</span>
+      </div>
+      <div class="top-bar-item hide-mobile">
+        <i data-feather="clock" class="icon-small"></i>
+        <span>Lunes a Sábados de 09:00 a 20:00 hs</span>
+      </div>
+      <div class="top-bar-item">
+        <a href="https://wa.me/5491123456789?text=Hola%20Boom%20Divina!%20Quisiera%20hacer%20una%20consulta" target="_blank" rel="noopener">
+          <i data-feather="message-circle" class="icon-small"></i>
+          <span>WhatsApp Directo</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar Principal -->
+  <header class="main-header" id="mainHeader">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-title">BOOM DIVINA</span>
+        <span class="brand-subtitle">ESTÉTICA FEMENINA</span>
+      </a>
+
+      <!-- Botón Hamburguesa Mobile -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <i data-feather="menu"></i>
+      </button>
+
+      <!-- Menú de Navegación -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li class="nav-item"><a href="#promociones" class="nav-link">Promociones</a></li>
+          <li class="nav-item"><a href="#domicilio" class="nav-link">A Domicilio</a></li>
+          <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
+          <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#reservar" class="btn btn-primary btn-glow">
+            <i data-feather="calendar" class="icon-small"></i>
+            <span>Reservar Turno</span>
+          </a>
+          <a href="#loginModal" class="nav-link nav-login-link" onclick="openLoginModal()" title="Acceso staff y administración">
+            <i data-feather="lock" class="icon-small"></i>
+            <span>Acceso</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenedor de contenido principal -->
+  <main class="page-content" id="inicio">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content animate-fade-in">
+          <span class="hero-badge">
+            <i data-feather="sparkles" class="icon-small"></i>
+            <span>Centro de Estética Femenina</span>
+          </span>
+          <h1 class="hero-title">BOOM DIVINA</h1>
+          <p class="hero-subtitle">
+            Un espacio para realzar tu belleza y dedicarte el tiempo que merecés.
+            Tratamientos personalizados en pestañas, cejas, uñas y cosmética avanzada en un ambiente cálido y sofisticado.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#reservar" class="btn btn-primary btn-lg btn-glow">
+              <i data-feather="calendar"></i>
+              <span>Reservar Turno Online</span>
+            </a>
+            <a href="#servicios" class="btn btn-outline btn-lg">
+              <span>Ver Tratamientos</span>
+            </a>
+          </div>
+
+          <div class="hero-features">
+            <div class="hero-feature-item">
+              <i data-feather="check-circle"></i>
+              <span>Atención Personalizada</span>
+            </div>
+            <div class="hero-feature-item">
+              <i data-feather="heart"></i>
+              <span>Productos Premium</span>
+            </div>
+            <div class="hero-feature-item">
+              <i data-feather="truck"></i>
+              <span>Servicio a Domicilio</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Media / Fotografía Estética -->
+        <div class="hero-media-wrapper">
+          <div class="hero-media-card">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Tratamiento de estética femenina BOOM DIVINA">
+            <div class="hero-floating-pill">
+              <div class="hero-floating-icon">
+                <i data-feather="star"></i>
+              </div>
+              <div>
+                <strong style="display:block; font-size: 0.88rem; color: var(--color-dark-gray);">Experiencia Relax</strong>
+                <span style="font-size: 0.75rem; color: var(--color-gray-warm);">Turnos sin esperas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios / Valor de Marca -->
+    <section class="section value-props-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Nuestra Esencia</span>
+          <h2 class="section-title">El Cuidado que Tu Piel Merece</h2>
+          <p class="section-description">Combinamos técnicas de vanguardia, bioseguridad y dedicación en cada detalle para brindarte una experiencia transformadora.</p>
+        </div>
+
+        <div class="props-grid">
+          <div class="prop-card">
+            <div class="prop-icon-box">
+              <i data-feather="heart"></i>
+            </div>
+            <h3>Atención Exclusiva</h3>
+            <p>Citas cronometradas para brindarte la tranquilidad y el asesoramiento individual que necesitás.</p>
+          </div>
+
+          <div class="prop-card">
+            <div class="prop-icon-box">
+              <i data-feather="shield"></i>
+            </div>
+            <h3>Bioseguridad & Calidad</h3>
+            <p>Esterilización en autoclave y cosméticos dermatológicamente testeados y aprobados.</p>
+          </div>
+
+          <div class="prop-card">
+            <div class="prop-icon-box">
+              <i data-feather="sparkles"></i>
+            </div>
+            <h3>Tendencias de Autor</h3>
+            <p>Diseño de miradas, arquitectura de cejas, kapping gel y terapias faciales de última generación.</p>
+          </div>
+
+          <div class="prop-card">
+            <div class="prop-icon-box">
+              <i data-feather="home"></i>
+            </div>
+            <h3>Atención a Domicilio</h3>
+            <p>Llevamos el salón a tu casa para fechas especiales, novias, cumpleaños o sesiones grupales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios Destacados -->
+    <section class="section services-preview-section bg-alt" id="servicios">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Servicios Exclusivos</span>
+          <h2 class="section-title">Tratamientos Más Elegidos</h2>
+          <p class="section-description">Elegí el servicio que estás buscando y asegurá tu turno con seña online.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Servicio 1: Lifting Pestañas -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=600&q=80" alt="Lifting de Pestañas">
+            </div>
+            <div class="service-card-body">
+              <span class="service-category-badge">Pestañas & Cejas</span>
+              <h3 class="service-card-title">Lifting de Pestañas + Tinte + Nutrición</h3>
+              <p class="service-card-desc">Curvado natural desde la raíz con baño de keratina y pigmento negro intenso para realzar la mirada sin extensiones.</p>
+              
+              <div class="service-meta">
+                <div class="meta-item">
+                  <i data-feather="clock"></i>
+                  <span>60 min</span>
+                </div>
+                <div class="service-price">$14.000</div>
+              </div>
+
+              <div class="service-sena-note">
+                <i data-feather="info"></i>
+                <span>Seña de reserva: <strong>$4.000</strong></span>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#reservar" class="btn btn-primary btn-block">Reservar Turno</a>
+            </div>
+          </div>
+
+          <!-- Servicio 2: Laminado de Cejas -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1597225244660-1cd128c64284?auto=format&fit=crop&w=600&q=80" alt="Laminado de Cejas">
+            </div>
+            <div class="service-card-body">
+              <span class="service-category-badge">Pestañas & Cejas</span>
+              <h3 class="service-card-title">Laminado & Perfilado con Henna</h3>
+              <p class="service-card-desc">Diseño morfológico según tus facciones, peinado alisador fijador y sombreado con henna para lograr densidad y simetría.</p>
+              
+              <div class="service-meta">
+                <div class="meta-item">
+                  <i data-feather="clock"></i>
+                  <span>45 min</span>
+                </div>
+                <div class="service-price">$11.000</div>
+              </div>
+
+              <div class="service-sena-note">
+                <i data-feather="info"></i>
+                <span>Seña de reserva: <strong>$3.000</strong></span>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#reservar" class="btn btn-primary btn-block">Reservar Turno</a>
+            </div>
+          </div>
+
+          <!-- Servicio 3: Kapping Gel -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Kapping Gel">
+            </div>
+            <div class="service-card-body">
+              <span class="service-category-badge">Manicuría</span>
+              <h3 class="service-card-title">Kapping Gel + Esmaltado Semipermanente</h3>
+              <p class="service-card-desc">Fina película de gel acrílico que protege y fortalece la uña natural, evitando roturas y descamaciones con esmaltado brillante.</p>
+              
+              <div class="service-meta">
+                <div class="meta-item">
+                  <i data-feather="clock"></i>
+                  <span>75 min</span>
+                </div>
+                <div class="service-price">$13.500</div>
+              </div>
+
+              <div class="service-sena-note">
+                <i data-feather="info"></i>
+                <span>Seña de reserva: <strong>$4.000</strong></span>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#reservar" class="btn btn-primary btn-block">Reservar Turno</a>
+            </div>
+          </div>
+
+          <!-- Servicio 4: Limpieza Facial -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Limpieza Facial">
+            </div>
+            <div class="service-card-body">
+              <span class="service-category-badge">Tratamientos Faciales</span>
+              <h3 class="service-card-title">Limpieza Facial con Punta de Diamante</h3>
+              <p class="service-card-desc">Exfoliación mecánica profunda, extracción de impurezas, espátula ultrasónica, máscara descongestiva e hidratación regeneradora.</p>
+              
+              <div class="service-meta">
+                <div class="meta-item">
+                  <i data-feather="clock"></i>
+                  <span>60 min</span>
+                </div>
+                <div class="service-price">$18.000</div>
+              </div>
+
+              <div class="service-sena-note">
+                <i data-feather="info"></i>
+                <span>Seña de reserva: <strong>$5.000</strong></span>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#reservar" class="btn btn-primary btn-block">Reservar Turno</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 40px;">
+          <a href="#reservar" class="btn btn-outline btn-lg">
+            <span>Ver Catálogo Completo & Reservar</span>
+            <i data-feather="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner de Promociones Especiales -->
+    <section class="section promotions-section" id="promociones">
+      <div class="container">
+        <div class="promo-banner-card">
+          <div class="promo-badge">¡Promoción del Mes!</div>
+          <h2 class="promo-title">15% OFF Combo Mirada Divina</h2>
+          <p class="promo-desc">Lifting de pestañas con nutrición de keratina + Laminado y perfilado de cejas en una misma sesión con descuento especial.</p>
+          
+          <div class="promo-discount-tag">15% OFF</div>
+
+          <p class="promo-validity">
+            <i data-feather="calendar" class="icon-small"></i> Válido para reservas realizadas durante todo el mes corriente.
+          </p>
+
+          <a href="#reservar" class="btn btn-primary btn-lg btn-glow">
+            Aprovechar Descuento
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Destacada de Servicio a Domicilio -->
+    <section class="section domicilio-banner-section bg-alt" id="domicilio">
+      <div class="container">
+        <div class="domicilio-banner-box" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: var(--space-8); align-items: center; background: var(--color-white); border-radius: var(--radius-2xl); border: 1px solid var(--color-border-pink); padding: var(--space-8); box-shadow: var(--shadow-card);">
+          <div>
+            <span class="section-tag">Servicio VIP Fuera del Salón</span>
+            <h2 style="font-size: 2.1rem; color: var(--color-dark-gray); margin-bottom: var(--space-3);">¿Querés que vayamos a tu casa?</h2>
+            <p style="font-size: 0.95rem; color: var(--color-gray-warm); line-height: 1.7; margin-bottom: var(--space-6);">
+              Llevamos nuestro equipamiento profesional y todos los cuidados necesarios hasta tu domicilio u hotel. Ideal para novias, madrinas, sesiones de fotos o reuniones de amigas con beneficios por cantidad de personas.
+            </p>
+            <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+              <a href="https://wa.me/5491123456789?text=Hola%20Boom%20Divina!%20Quisiera%20solicitar%20cotizacion%20a%20domicilio" class="btn btn-primary" target="_blank">
+                <i data-feather="truck"></i>
+                <span>Cotizar Servicio a Domicilio</span>
+              </a>
+              <a href="https://wa.me/5491123456789?text=Hola%20Boom%20Divina!%20Tengo%20una%20consulta" class="btn btn-outline" target="_blank">
+                <i data-feather="message-circle"></i>
+                <span>Consultar por WhatsApp</span>
+              </a>
+            </div>
+          </div>
+          <div style="border-radius: var(--radius-xl); overflow: hidden; height: 260px;">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" alt="Servicio a domicilio estética" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería Preview -->
+    <section class="section gallery-preview-section" id="galeria">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Galería de Trabajos</span>
+          <h2 class="section-title">Resultados Reales</h2>
+          <p class="section-description">Mirá algunos de los trabajos realizados por nuestras especialistas.</p>
+        </div>
+
+        <div class="gallery-preview-grid">
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=600&q=80" alt="Lifting pestañas resultado">
+            <div class="gallery-info">
+              <h4>Lifting & Tinte</h4>
+              <p>Curvatura e intensidad natural</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Kapping gel y nail art">
+            <div class="gallery-info">
+              <h4>Kapping Gel + Nail Art</h4>
+              <p>Uñas impecables y resistentes</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1597225244660-1cd128c64284?auto=format&fit=crop&w=600&q=80" alt="Perfilado cejas">
+            <div class="gallery-info">
+              <h4>Diseño & Laminado</h4>
+              <p>Armonía y fijación de cejas</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Tratamiento facial">
+            <div class="gallery-info">
+              <h4>Higiene Facial Profunda</h4>
+              <p>Piel luminosa y renovada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sistema Interactivo de Reserva (Wizard) -->
+    <section class="section booking-section" id="reservar">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Reserva Online</span>
+          <h2 class="section-title">Agendá Tu Cita en 5 Pasos</h2>
+          <p class="section-description">Elegí tu tratamiento, seleccioná el horario disponible y confirmá tu turno con seña online.</p>
+        </div>
+
+        <div class="booking-card">
+          <!-- Stepper -->
+          <div class="booking-stepper">
+            <div class="step-item active" id="st1">
+              <div class="step-number">1</div>
+              <div class="step-label">Servicio</div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item" id="st2">
+              <div class="step-number">2</div>
+              <div class="step-label">Profesional</div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item" id="st3">
+              <div class="step-number">3</div>
+              <div class="step-label">Fecha & Hora</div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item" id="st4">
+              <div class="step-number">4</div>
+              <div class="step-label">Tus Datos</div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item" id="st5">
+              <div class="step-number">5</div>
+              <div class="step-label">Confirmación</div>
+            </div>
+          </div>
+
+          <!-- Contenedor de Pasos -->
+          <div id="bookingStepsWrapper">
+            <!-- Paso 1 -->
+            <div class="wizard-step active" id="demoStep1">
+              <h3 class="wizard-title">1. Elegí el tratamiento</h3>
+              <p class="wizard-desc">Hacé clic sobre el servicio que deseás realizarte.</p>
+
+              <div class="service-selector-grid">
+                <div class="service-select-card selected" onclick="selectDemoService(this, 'Lifting de Pestañas + Tinte', 14000, 4000)">
+                  <div class="service-select-header">
+                    <h4>Lifting de Pestañas + Tinte</h4>
+                    <span class="price-badge">$14.000</span>
+                  </div>
+                  <p class="service-select-desc">Curvado natural con keratina y color negro intenso.</p>
+                  <div class="service-select-footer">
+                    <span>60 min</span>
+                    <span class="sena-badge">Seña: $4.000</span>
+                  </div>
+                </div>
+
+                <div class="service-select-card" onclick="selectDemoService(this, 'Laminado y Perfilado de Cejas', 11000, 3000)">
+                  <div class="service-select-header">
+                    <h4>Laminado & Perfilado Cejas</h4>
+                    <span class="price-badge">$11.000</span>
+                  </div>
+                  <p class="service-select-desc">Diseño morfológico y sombreado con henna.</p>
+                  <div class="service-select-footer">
+                    <span>45 min</span>
+                    <span class="sena-badge">Seña: $3.000</span>
+                  </div>
+                </div>
+
+                <div class="service-select-card" onclick="selectDemoService(this, 'Kapping Gel + Semipermanente', 13500, 4000)">
+                  <div class="service-select-header">
+                    <h4>Kapping Gel + Semipermanente</h4>
+                    <span class="price-badge">$13.500</span>
+                  </div>
+                  <p class="service-select-desc">Refuerzo protector para uñas naturales con nail art.</p>
+                  <div class="service-select-footer">
+                    <span>75 min</span>
+                    <span class="sena-badge">Seña: $4.000</span>
+                  </div>
+                </div>
+
+                <div class="service-select-card" onclick="selectDemoService(this, 'Limpieza Facial Profunda', 18000, 5000)">
+                  <div class="service-select-header">
+                    <h4>Limpieza Facial Profunda</h4>
+                    <span class="price-badge">$18.000</span>
+                  </div>
+                  <p class="service-select-desc">Punta de diamante, espátula ultrasónica e hidratación.</p>
+                  <div class="service-select-footer">
+                    <span>60 min</span>
+                    <span class="sena-badge">Seña: $5.000</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wizard-footer">
+                <div></div>
+                <button type="button" class="btn btn-primary" onclick="goDemoStep(2)">
+                  <span>Siguiente Paso</span>
+                  <i data-feather="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="wizard-step" id="demoStep2">
+              <h3 class="wizard-title">2. Elegí tu especialista</h3>
+              <p class="wizard-desc">Seleccioná a la profesional o dejá que el sistema asigne la disponible.</p>
+
+              <div class="professional-selector-grid">
+                <div class="prof-select-card selected" onclick="selectDemoProf(this, 'Camila Benítez')">
+                  <div class="prof-avatar-placeholder"><i data-feather="user"></i></div>
+                  <div class="prof-info">
+                    <h4>Camila Benítez</h4>
+                    <p class="text-muted">Lashista Senior & Diseñadora de Cejas</p>
+                  </div>
+                </div>
+
+                <div class="prof-select-card" onclick="selectDemoProf(this, 'Sofía Navarro')">
+                  <div class="prof-avatar-placeholder"><i data-feather="user"></i></div>
+                  <div class="prof-info">
+                    <h4>Sofía Navarro</h4>
+                    <p class="text-muted">Nail Artist & Cosmetóloga</p>
+                  </div>
+                </div>
+
+                <div class="prof-select-card" onclick="selectDemoProf(this, 'Cualquier Especialista')">
+                  <div class="prof-avatar-placeholder"><i data-feather="users"></i></div>
+                  <div class="prof-info">
+                    <h4>Cualquiera disponible</h4>
+                    <p class="text-muted">Primera especialista disponible en tu horario</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wizard-footer">
+                <button type="button" class="btn btn-outline" onclick="goDemoStep(1)">Anterior</button>
+                <button type="button" class="btn btn-primary" onclick="goDemoStep(3)">Siguiente Paso</button>
+              </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="wizard-step" id="demoStep3">
+              <h3 class="wizard-title">3. Seleccioná día y horario disponible</h3>
+              <p class="wizard-desc">Los horarios mostrados se adaptan a la duración del tratamiento.</p>
+
+              <div class="datetime-picker-layout">
+                <div>
+                  <label class="form-label">Elegí la fecha:</label>
+                  <input type="date" class="form-control" id="demoDateInput" value="2026-11-15">
+                  <span class="form-hint">Atendemos de Lunes a Sábados</span>
+                </div>
+                <div>
+                  <label class="form-label">Horarios libres:</label>
+                  <div class="slots-grid">
+                    <button type="button" class="slot-chip selected" onclick="selectDemoSlot(this, '10:00')">10:00 hs</button>
+                    <button type="button" class="slot-chip" onclick="selectDemoSlot(this, '11:15')">11:15 hs</button>
+                    <button type="button" class="slot-chip" onclick="selectDemoSlot(this, '14:00')">14:00 hs</button>
+                    <button type="button" class="slot-chip" onclick="selectDemoSlot(this, '15:30')">15:30 hs</button>
+                    <button type="button" class="slot-chip" onclick="selectDemoSlot(this, '17:00')">17:00 hs</button>
+                    <button type="button" class="slot-chip" onclick="selectDemoSlot(this, '18:15')">18:15 hs</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wizard-footer">
+                <button type="button" class="btn btn-outline" onclick="goDemoStep(2)">Anterior</button>
+                <button type="button" class="btn btn-primary" onclick="goDemoStep(4)">Siguiente Paso</button>
+              </div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="wizard-step" id="demoStep4">
+              <h3 class="wizard-title">4. Ingresá tus datos de contacto</h3>
+              <p class="wizard-desc">Te contactaremos para confirmar tu seña y coordinar tu turno.</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Nombre *</label>
+                  <input type="text" class="form-control" id="demoClientNombre" value="Valentina" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="demoClientApellido" value="Ríos" placeholder="Tu apellido">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Teléfono / WhatsApp *</label>
+                  <input type="tel" class="form-control" id="demoClientTel" value="1198765432" placeholder="Ej: 1123456789">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email (opcional)</label>
+                  <input type="email" class="form-control" placeholder="tu@email.com">
+                </div>
+              </div>
+
+              <div class="wizard-footer">
+                <button type="button" class="btn btn-outline" onclick="goDemoStep(3)">Anterior</button>
+                <button type="button" class="btn btn-primary" onclick="goDemoStep(5)">Revisar Resumen</button>
+              </div>
+            </div>
+
+            <!-- Paso 5 -->
+            <div class="wizard-step" id="demoStep5">
+              <h3 class="wizard-title">5. Resumen de tu Reserva</h3>
+              <p class="wizard-desc">Verificá los detalles antes de enviar la solicitud.</p>
+
+              <div class="booking-summary-card">
+                <div class="summary-row">
+                  <span class="summary-label">Servicio:</span>
+                  <span class="summary-value" id="demoSumService">Lifting de Pestañas + Tinte</span>
+                </div>
+                <div class="summary-row">
+                  <span class="summary-label">Profesional:</span>
+                  <span class="summary-value" id="demoSumProf">Camila Benítez</span>
+                </div>
+                <div class="summary-row">
+                  <span class="summary-label">Fecha y Horario:</span>
+                  <span class="summary-value" id="demoSumDateTime">15/11/2026 a las 10:00 hs</span>
+                </div>
+                <div class="summary-row">
+                  <span class="summary-label">Precio Total:</span>
+                  <span class="summary-value price-highlight" id="demoSumPrice">$14.000</span>
+                </div>
+                <div class="summary-row sena-highlight-row">
+                  <span class="summary-label">Importe de Seña a abonar:</span>
+                  <span class="summary-value sena-amount" id="demoSumSena">$4.000</span>
+                </div>
+              </div>
+
+              <div class="sena-policy-alert">
+                <i data-feather="info" class="alert-icon"></i>
+                <div>
+                  <strong>Condición de Reserva:</strong>
+                  <p style="margin: 3px 0 0; font-size: 0.8rem; color: var(--color-dark-gray);">
+                    Para asegurar tu turno es necesario abonar la seña informada. La misma no es reembolsable en caso de inasistencia. Podés reprogramar avisando con al menos 24 hs de anticipación.
+                  </p>
+                </div>
+              </div>
+
+              <div class="wizard-footer">
+                <button type="button" class="btn btn-outline" onclick="goDemoStep(4)">Modificar Datos</button>
+                <a href="https://wa.me/5491123456789?text=Hola%20Boom%20Divina!%20Quiero%20confirmar%20mi%20turno%20de%20Lifting%20de%20Pestanas%20para%20el%2015%20de%20noviembre" class="btn btn-primary btn-lg btn-glow" target="_blank">
+                  <i data-feather="check-circle"></i>
+                  <span>Confirmar Solicitud de Turno</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="section contact-section" id="contacto">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Ubicación y Atención</span>
+          <h2 class="section-title">Encontranos en Recoleta</h2>
+          <p class="section-description">Un espacio cálido y exclusivo pensado para tu relajación y cuidado personal.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Información del Salón</h3>
+            <ul class="contact-detail-list">
+              <li class="contact-detail-item">
+                <div class="detail-icon"><i data-feather="map-pin"></i></div>
+                <div>
+                  <strong>Dirección:</strong>
+                  <p>Av. Santa Fe 2450, Piso 3, Recoleta, CABA</p>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="detail-icon"><i data-feather="clock"></i></div>
+                <div>
+                  <strong>Horarios:</strong>
+                  <p>Lunes a Sábados de 09:00 a 20:00 hs</p>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="detail-icon"><i data-feather="phone"></i></div>
+                <div>
+                  <strong>Teléfono:</strong>
+                  <p>+54 9 11 2345-6789</p>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="detail-icon"><i data-feather="instagram"></i></div>
+                <div>
+                  <strong>Instagram:</strong>
+                  <p>@boomdivina.estetica</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-card">
+            <h3>Políticas de Seña y Cancelación</h3>
+            <p><strong>• Seña previa:</strong> Requerida para asegurar tu horario en la agenda.</p>
+            <p><strong>• No reembolsable:</strong> En caso de cancelación por parte de la clienta o inasistencia.</p>
+            <p><strong>• Reprogramación:</strong> Podés cambiar la fecha avisando con al menos 24 hs de anticipación.</p>
+            <p><strong>• Puntualidad:</strong> 10 minutos de tolerancia para garantizar la atención de todas las clientas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-column brand-col">
+        <h3 class="footer-brand">BOOM DIVINA</h3>
+        <p class="footer-tagline">Realzamos tu belleza natural con tratamientos de vanguardia, atención personalizada y la calidez que merecés.</p>
+        <div class="social-links">
+          <a href="https://instagram.com/boomdivina.estetica" target="_blank" rel="noopener" aria-label="Instagram">
+            <i data-feather="instagram"></i>
+          </a>
+          <a href="https://wa.me/5491123456789" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i data-feather="message-circle"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column links-col">
+        <h4 class="footer-title">Enlaces Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#promociones">Promociones</a></li>
+          <li><a href="#domicilio">A Domicilio</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto & Políticas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact-col">
+        <h4 class="footer-title">Contacto</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <i data-feather="map-pin"></i>
+            <span>Av. Santa Fe 2450, Piso 3, CABA</span>
+          </li>
+          <li>
+            <i data-feather="phone"></i>
+            <span>+54 9 11 2345-6789</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 <strong>BOOM DIVINA – Estética</strong>. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/5491123456789?text=Hola%20Boom%20Divina!%20Quisiera%20consultar%20por%20un%20turno" 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Contactar por WhatsApp">
+    <i data-feather="message-circle"></i>
+    <span class="whatsapp-tooltip">¿Dudas? Escribinos por WhatsApp</span>
+  </a>
+
+  <!-- Script Lógica Wizard Demo en Standalone -->
+  <script>
+    let currentStep = 1;
+    let selectedService = 'Lifting de Pestañas + Tinte';
+    let selectedPrice = 14000;
+    let selectedSena = 4000;
+    let selectedProf = 'Camila Benítez';
+    let selectedSlot = '10:00';
+
+    function goDemoStep(step) {
+      currentStep = step;
+      for (let i = 1; i <= 5; i++) {
+        const stepEl = document.getElementById(`demoStep${i}`);
+        const stNum = document.getElementById(`st${i}`);
+        if (stepEl) {
+          stepEl.classList.toggle('active', i === step);
+        }
+        if (stNum) {
+          stNum.classList.toggle('active', i === step);
+          stNum.classList.toggle('completed', i < step);
+        }
+      }
+      if (step === 5) {
+        document.getElementById('demoSumService').textContent = selectedService;
+        document.getElementById('demoSumProf').textContent = selectedProf;
+        document.getElementById('demoSumPrice').textContent = `$${selectedPrice.toLocaleString('es-AR')}`;
+        document.getElementById('demoSumSena').textContent = `$${selectedSena.toLocaleString('es-AR')}`;
+        document.getElementById('demoSumDateTime').textContent = `${document.getElementById('demoDateInput').value} a las ${selectedSlot} hs`;
+      }
+    }
+
+    function selectDemoService(el, name, price, sena) {
+      document.querySelectorAll('.service-select-card').forEach(c => c.classList.remove('selected'));
+      el.classList.add('selected');
+      selectedService = name;
+      selectedPrice = price;
+      selectedSena = sena;
+    }
+
+    function selectDemoProf(el, name) {
+      document.querySelectorAll('.prof-select-card').forEach(c => c.classList.remove('selected'));
+      el.classList.add('selected');
+      selectedProf = name;
+    }
+
+    function selectDemoSlot(el, time) {
+      document.querySelectorAll('.slot-chip').forEach(c => c.classList.remove('selected'));
+      el.classList.add('selected');
+      selectedSlot = time;
+    }
+
+    feather.replace();
+  </script>
+</body>
+</html>
